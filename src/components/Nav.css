@@ -1,9 +1,9 @@
 .header {
-  background-color: #8F80BA;
-  color: #FFFFFF;
+  background-color: #FAF9FA;
+  color: #8F80BA;
   height: 100px;
   position: fixed; 
   top: 0; 
   width: 100vw;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #8F80BA;
 }
