@@ -21,7 +21,7 @@
 
 #menuToggle a:hover
 {
-  color: tomato;
+  color: white;
 }
 
 
@@ -114,7 +114,8 @@
   height: 90vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
-  padding-top: 125px;
+  padding-top: 20vh;
+  border-right: 2px solid black;
   
   background: #8F80BA;
   list-style-type: none;
