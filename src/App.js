@@ -1,15 +1,19 @@
 import logo from './logo.svg';
 import Menu from './components/Menu.jsx'
 import Nav from './components/Nav.jsx'
+import All from "./components/views/All"
+import { useState } from "react";
 import './App.css';
 
 
 function App() {
-
+  const ALL = "ALL"
+  const [view, setView] = useState(ALL)
   return (
     <div className="App">
       <Nav />
-      <Menu />
+      <Menu setView={setView} />
+      {view === ALL && <All />}
     </div>
   );
 }
