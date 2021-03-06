@@ -5,7 +5,7 @@ import Nav from './components/Nav.jsx'
 import All from "./components/views/All"
 import Dessert from "./components/views/Dessert"
 import Drink from "./components/views/Drink"
-
+import Coffee from "./components/views/Coffee"
 
 import { useState } from "react";
 import './App.css';
@@ -21,6 +21,7 @@ function App() {
       {view === "ALL" && <All />}
       {view === "DRINK" && <Drink />}
       {view === "DESSERT" && <Dessert />}
+      {view === "COFFEE" && <Coffee />}
     </div>
   );
 }
