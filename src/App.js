@@ -1,8 +1,12 @@
 import logo from './logo.svg';
 import Menu from './components/Menu.jsx'
 import Nav from './components/Nav.jsx'
+
 import All from "./components/views/All"
 import Dessert from "./components/views/Dessert"
+import Drink from "./components/views/Drink"
+
+
 import { useState } from "react";
 import './App.css';
 
@@ -14,7 +18,8 @@ function App() {
     <div className="App">
       <Nav />
       <Menu setView={setView} />
-      {view === ALL && <All />}
+      {view === "ALL" && <All />}
+      {view === "DRINK" && <Drink />}
       {view === "DESSERT" && <Dessert />}
     </div>
   );
