@@ -1,4 +1,4 @@
-import './Menu.css'
+import './Menu.scss'
 
 export default function Menu(props) {
   const ALL = "ALL"
@@ -17,10 +17,10 @@ export default function Menu(props) {
           <span></span>
 
           <ul id="menu">
-            <a href="#" onClick={() => props.setView(ALL)}><li>All</li></a>
-            <a href="#" onClick={() => props.setView(DRINK)}><li>Drinks</li></a>
-            <a href="#" onClick={() => props.setView(DESSERT)}><li>Desserts</li></a>
-            <a href="#" onClick={() => props.setView(COFFEE)}><li>Coffee</li></a>
+            <button className="menuItem" onClick={() => props.setView(ALL)}><li>All</li></button>
+            <button className="menuItem" onClick={() => props.setView(DRINK)}><li>Drinks</li></button>
+            <button className="menuItem" onClick={() => props.setView(DESSERT)}><li>Desserts</li></button>
+            <button className="menuItem" onClick={() => props.setView(COFFEE)}><li>Coffee</li></button>
           </ul>
         </div>
       </nav>

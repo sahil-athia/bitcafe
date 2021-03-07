@@ -110,14 +110,14 @@
 #menu
 {
   position: absolute;
-  width: 200px;
+  width: min-content;
   height: 90vh;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 20vh;
-  border-right: 2px solid #8F80BA;
+  border-right: 2px solid #F3F3F3;
   
-  background: #FAF9FA;
+  background: #FFFFFF;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -132,6 +132,18 @@
 {
   padding: 10px 0;
   font-size: 22px;
+}
+
+.menuItem {
+  text-align: left;
+  width: 100%;
+  border: none;
+  background-color: white;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #EFF4FE;
+  }
 }
 
 /*
