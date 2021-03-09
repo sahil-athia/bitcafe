@@ -10,13 +10,13 @@ export default function Dessert(props) {
       <div className="productDisplay">
 
         <div className="productBox">
-          <h2 className="productName">Example Name 1</h2>
+          <h2 className="productName">Dessert Name 1</h2>
           <p>Item details here</p>
           <button className="buyButton">Buy Now</button>
         </div> 
 
         <div className="productBox">
-          <h2 className="productName">Example Name 2</h2>
+          <h2 className="productName">Dessert Name 2</h2>
           <p>Item details here</p>
           <button className="buyButton">Buy Now</button>
         </div>
