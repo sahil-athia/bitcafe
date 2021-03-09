@@ -6,11 +6,16 @@ export default function Dessert(props) {
   return (
     <div style={pageStyle} className="productPage">
       <h1>Show Desserts</h1>
-      <div className="productBox">
 
-      </div> 
+      <div className="productDisplay">
+        
+        <div className="productBox">
+          <h2 className="productName">Example Name 1</h2>
+        </div> 
 
-      <div className="productBox">
+        <div className="productBox">
+          <h2 className="productName">Example Name 2</h2>
+        </div>
 
       </div>
     </div>
