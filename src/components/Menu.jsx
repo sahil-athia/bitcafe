@@ -7,10 +7,13 @@ export default function Menu(props) {
   const COFFEE = "COFFEE"
   // const changeView = (newView) => setView(newView)
 
+  const menuToggle = () => {
+    props.open ? props.setOpen(false) : props.setOpen(true)
+  }
   return (
     <nav role="navigation">
         <div id="menuToggle">
-          <input type="checkbox" />
+          <input type="checkbox" onClick={menuToggle} />
 
           <span></span>
           <span></span>

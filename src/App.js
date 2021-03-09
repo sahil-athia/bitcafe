@@ -14,10 +14,14 @@ import './App.css';
 function App() {
   const ALL = "ALL"
   const [view, setView] = useState(ALL)
+  const [open, setOpen] = useState(false)
+
+  console.log(open)
+
   return (
     <div className="App">
       <Nav />
-      <Menu setView={setView} />
+      <Menu setView={setView} setOpen={setOpen} opne={open} />
       {view === "ALL" && <All />}
       {view === "DRINK" && <Drink />}
       {view === "DESSERT" && <Dessert />}
