@@ -26,6 +26,20 @@
         color: #452B7B;
         font-size: 200%;
       }
+
+      .buyButton {
+        color: white;
+        font-weight: 600;
+        font-size: 100%;
+        cursor: pointer;
+        width: 30vw;
+        height: 10%;
+        border: none;
+        border-radius: 20px;
+        background-color: #55C8D5;
+
+        // margin-top: 20vw;
+      }
     }
   }
 }
