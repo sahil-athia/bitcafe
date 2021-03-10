@@ -13,7 +13,6 @@
 
 
     .productBox {
-      background-color: #FFFFFF;
       width: 35vw;
       height: 30vw;
       // border: 1px solid #F3F3F3;
@@ -45,8 +44,16 @@
 
 .productPage--dark {
   background-color: #100C18;
+
+  .productBox {
+    background-color: #27262C;
+  }
 }
 
 .productPage--light {
   background-color: #FAF9FA;
+
+  .productBox {
+    background-color: #FFFFFF;
+  }
 }
