@@ -39,14 +39,37 @@ function App() {
         view === "ALL" && 
         <All 
           open={open} 
+          light={light}
+          dark={dark}
         />
       }
 
-      {view === "DRINK" && <Drink open={open} />}
+      {
+        view === "DRINK" && 
+        <Drink 
+          open={open} 
+          light={light}
+          dark={dark}
+        />
+      }
 
-      {view === "DESSERT" && <Dessert open={open} />}
+      {
+        view === "DESSERT" && 
+        <Dessert 
+          open={open} 
+          light={light}
+          dark={dark} 
+        />
+      }
 
-      {view === "COFFEE" && <Coffee open={open} />}
+      {
+        view === "COFFEE" && 
+        <Coffee 
+          open={open} 
+          light={light}
+          dark={dark} 
+        />
+      }
 
     </div>
   );

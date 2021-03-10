@@ -2,7 +2,6 @@
   width: 80vw;
   // margin-left: 15vw;
   overflow: hidden;
-  background-color: #FAF9FA;
   margin-top: 100px;
   
 
@@ -42,4 +41,12 @@
       }
     }
   }
+}
+
+.productPage--dark {
+  background-color: #100C18;
+}
+
+.productPage--light {
+  background-color: #FAF9FA;
 }
