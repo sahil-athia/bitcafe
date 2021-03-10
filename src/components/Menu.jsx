@@ -1,4 +1,5 @@
 import './Menu.scss'
+import classNames from 'classnames';
 
 export default function Menu(props) {
   const ALL = "ALL"
@@ -6,6 +7,11 @@ export default function Menu(props) {
   const DESSERT = "DESSERT"
   const COFFEE = "COFFEE"
   // const changeView = (newView) => setView(newView)
+
+  const menuClass = classNames('menu', {
+    'menu--light': props.light,
+    'menu--dark': props.dark
+  });
 
   const menuToggle = () => {
     props.open ? props.setOpen(false) : props.setOpen(true)
@@ -21,15 +27,15 @@ export default function Menu(props) {
     }
   }
   return (
-    <nav role="navigation">
-        <div id="menuToggle">
+    <nav role="navigation" >
+        <div className="menuToggle">
           <input type="checkbox" onClick={menuToggle} />
 
           <span></span>
           <span></span>
           <span></span>
 
-          <ul id="menu">
+          <ul className={menuClass}>
             <button className="menuItem" onClick={() => props.setView(ALL)}><li>All</li></button>
             <button className="menuItem" onClick={() => props.setView(DRINK)}><li>Drinks</li></button>
             <button className="menuItem" onClick={() => props.setView(DESSERT)}><li>Desserts</li></button>
