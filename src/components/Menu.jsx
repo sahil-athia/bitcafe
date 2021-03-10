@@ -10,6 +10,16 @@ export default function Menu(props) {
   const menuToggle = () => {
     props.open ? props.setOpen(false) : props.setOpen(true)
   }
+
+  const themeToggle = (caller) => {
+    if (caller === "light") {
+      props.setDark(false)
+      props.setLight(true)
+    } else if (caller === "dark") {
+      props.setDark(true)
+      props.setLight(false)
+    }
+  }
   return (
     <nav role="navigation">
         <div id="menuToggle">
@@ -24,6 +34,8 @@ export default function Menu(props) {
             <button className="menuItem" onClick={() => props.setView(DRINK)}><li>Drinks</li></button>
             <button className="menuItem" onClick={() => props.setView(DESSERT)}><li>Desserts</li></button>
             <button className="menuItem" onClick={() => props.setView(COFFEE)}><li>Coffee</li></button>
+            <button className="themeButton" onClick={() => themeToggle("dark")}>Dark</button>
+            <button className="themeButton" onClick={() => themeToggle("light")}>Light</button>
           </ul>
         </div>
       </nav>

@@ -15,12 +15,23 @@ function App() {
   const ALL = "ALL"
   const [view, setView] = useState(ALL)
   const [open, setOpen] = useState(false)
-
+  const [light, setLight] = useState(true)
+  const [dark, setDark] = useState(false)
+  console.log(light, dark)
 
   return (
     <div className="App">
       <Nav />
-      <Menu setView={setView} setOpen={setOpen} open={open} />
+      <Menu 
+        setView={setView} 
+        setOpen={setOpen}
+        setLight={setLight} 
+        setDark={setDark}
+        open={open} 
+        light={light}
+        dark={dark}
+
+      />
       {view === "ALL" && <All open={open} />}
       {view === "DRINK" && <Drink open={open} />}
       {view === "DESSERT" && <Dessert open={open} />}
