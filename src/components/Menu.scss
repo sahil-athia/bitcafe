@@ -115,16 +115,6 @@
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-.menu--dark {
-  border-right: 2px solid #37363d;
-  background: #27262C;
-}
-
-.menu--light {
-  border-right: 2px solid #F3F3F3;
-  background: #FFFFFF;
-}
-
 .menu li
 {
   padding: 10px 0;
@@ -141,7 +131,6 @@
 
   &:hover {
     cursor: pointer;
-    background-color: #EFF4FE;
   }
 }
 
@@ -151,4 +140,30 @@
 .menuToggle input:checked ~ ul
 {
   transform: none;
+}
+
+.menu--dark {
+  border-right: 2px solid #37363d;
+  background: #27262C;
+
+  .menuItem {
+    background-color: #27262C;
+
+    &:hover {
+      background-color: rgb(162, 139, 212);
+    }
+  }
+}
+
+.menu--light {
+  border-right: 2px solid #F3F3F3;
+  background: #FFFFFF;
+
+  .menuItem {
+    background-color: white;
+
+    &:hover {
+      background-color: #EFF4FE;
+    }
+  }
 }
