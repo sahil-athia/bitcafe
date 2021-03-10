@@ -7,6 +7,8 @@ import Dessert from "./components/views/Dessert"
 import Drink from "./components/views/Drink"
 import Coffee from "./components/views/Coffee"
 
+import classNames from 'classnames';
+
 import { useState } from "react";
 import './App.css';
 
@@ -17,10 +19,16 @@ function App() {
   const [open, setOpen] = useState(false)
   const [light, setLight] = useState(true)
   const [dark, setDark] = useState(false)
+
+  const appClass = classNames('App', {
+    'App--light': light,
+    'App--dark': dark
+  });
+
   console.log(light, dark)
 
   return (
-    <div className="App">
+    <div className={appClass}>
       <Nav 
         light={light}
         dark={dark}

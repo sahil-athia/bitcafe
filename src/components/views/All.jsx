@@ -10,7 +10,7 @@ export default function All(props) {
 
   return (
     <div style={pageStyle} className={pageClass}>
-      <h1>Show All Items</h1>
+      <h1 className="title">Show All Items</h1>
 
       <div className="productDisplay">
 

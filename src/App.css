@@ -1,9 +1,15 @@
 .App {
   text-align: center;
-  background-color: #FAF9FA;
   height: 100vh;
 }
 
+.App--dark {
+  background-color: #100C18;
+}
+
+.App--light {
+  background-color: #FAF9FA;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

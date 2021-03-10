@@ -1,3 +1,7 @@
+.title {
+  color: #9A69F7;
+}
+
 .productPage {
   width: 80vw;
   // margin-left: 15vw;
@@ -21,7 +25,6 @@
       .productName {
         margin: 3vh;
         text-align: left;
-        color: #452B7B;
         font-size: 200%;
       }
 
@@ -47,6 +50,10 @@
 
   .productBox {
     background-color: #27262C;
+
+    .productName {
+      color: #FFFFFF;
+    }
   }
 }
 
@@ -55,5 +62,9 @@
 
   .productBox {
     background-color: #FFFFFF;
+
+    .productName {
+      color: #452B7B;
+    }
   }
 }
