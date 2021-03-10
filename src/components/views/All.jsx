@@ -6,7 +6,7 @@ export default function All(props) {
   const pageClass = classNames('productPage', {
     'productPage--light': props.light,
     'productPage--dark': props.dark
- });
+  });
 
   return (
     <div style={pageStyle} className={pageClass}>
