@@ -21,7 +21,10 @@ function App() {
 
   return (
     <div className="App">
-      <Nav />
+      <Nav 
+        light={light}
+        dark={dark}
+      />
       <Menu 
         setView={setView} 
         setOpen={setOpen}
@@ -32,10 +35,19 @@ function App() {
         dark={dark}
 
       />
-      {view === "ALL" && <All open={open} />}
+      {
+        view === "ALL" && 
+        <All 
+          open={open} 
+        />
+      }
+
       {view === "DRINK" && <Drink open={open} />}
+
       {view === "DESSERT" && <Dessert open={open} />}
+
       {view === "COFFEE" && <Coffee open={open} />}
+
     </div>
   );
 }
