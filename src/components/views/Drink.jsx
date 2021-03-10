@@ -9,8 +9,8 @@ export default function Drink(props) {
   });
 
   return (
-    <div style={pageStyle} className="productPage">
-      <h1>Show Drinks</h1>
+    <div style={pageStyle} className={pageClass}>
+      <h1 className="title" >Show Drinks</h1>
 
       <div className="productDisplay">
 

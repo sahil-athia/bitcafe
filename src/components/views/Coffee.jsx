@@ -9,8 +9,8 @@ export default function Coffee(props) {
   });
 
   return (
-    <div style={pageStyle} className="productPage">
-      <h1>Show All Coffee</h1>
+    <div style={pageStyle} className={pageClass}>
+      <h1 className="title">Show All Coffee</h1>
 
       <div className="productDisplay">
 
